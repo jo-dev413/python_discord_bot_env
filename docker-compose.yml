@@ -15,6 +15,7 @@ services:
     build: ./mysql/
     environment:
       MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASS
+      MYSQL_DATABASE: $MYSQL_DB
     networks:
       - discord-bot-app-net
 
