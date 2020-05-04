@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  discord_bot_client:
+    container_name: discord_bot_client
+    build: ./bot_client/
+    restart: always
+    volumes:
+      - ./bot_client/src:/app/discord_bot
+    tty: true
