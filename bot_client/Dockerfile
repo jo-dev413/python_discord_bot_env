@@ -10,3 +10,4 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install --upgrade setuptools
 RUN python3 -m pip install -U discord.py
+RUN python3 -m pip install -U mysql-connector-python
