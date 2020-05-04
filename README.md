@@ -1,0 +1,2 @@
+# python_discord_bot_env
+dockerを使ってdisocrd.pyを動作させるための環境
