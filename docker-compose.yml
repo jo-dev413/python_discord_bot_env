@@ -7,9 +7,17 @@ services:
     volumes:
       - ./bot_client/src:/app/discord_bot
     tty: true
+    networks:
+      - discord-bot-app-net
 
   discord_bot_db:
     container_name: discord_bot_db
     build: ./mysql/
     environment:
       MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASS
+    networks:
+      - discord-bot-app-net
+
+networks:
+  discord-bot-app-net:
+    driver: bridge
